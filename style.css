@@ -1,0 +1,123 @@
+/* Basic reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1c1c1c;
+  color: #dcdcdc;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #2e2e2e;
+  color: #a8d5ba;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header:hover {
+  background-color: #3a3a3a;
+  color: #89b8a0;
+}
+
+.profile {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#profile-img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #a8d5ba;
+  transition: transform 0.3s ease;
+}
+
+#profile-img:hover {
+  transform: scale(1.1);
+}
+
+.section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.section:hover {
+  background-color: #3a3a3a;
+}
+
+h2 {
+  color: #a8d5ba;
+  margin-bottom: 10px;
+}
+
+.project, .social a {
+  margin-bottom: 15px;
+  color: #dcdcdc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project a:hover, .social a:hover {
+  color: #a8d5ba;
+}
+
+form label, form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  background-color: #333333;
+  border: 1px solid #a8d5ba;
+  color: #dcdcdc;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  background-color: #444444;
+  border-color: #89b8a0;
+}
+
+form button {
+  background-color: #a8d5ba;
+  color: #1c1c1c;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #89b8a0;
+  color: #1c1c1c;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  #profile-img {
+    width: 120px;
+  }
+  .section {
+    padding: 10px;
+  }
+}

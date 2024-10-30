@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hassan alsubhi CV</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("PBv9n2mI5hwTiWCNm"); // Replace with your EmailJS User ID
+    })();
+    </script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Hassan abdulqader alsubhi</h1>
+    <p>Your Objective: Aspiring software engineer passionate about web development.</p>
+  </header>
+
+  <!-- Profile Picture -->
+  <section class="profile">
+    <h2><img src="my_pic.jpg" id="profile-img" alt="Your pic"></h2>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section">
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor's in computer science, University of Jeddah (2021 - 2025)</li>
+      
+    </ul>
+  </section>
+
+  
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project Title 1</h3>
+      <p>Description of project 1. [<a href="link-to-github">View on GitHub</a>]</p>
+    </div>
+    <div class="project">
+      <h3>Project Title 2</h3>
+      <p>Description of project 2. [<a href="link-to-github">View on GitHub</a>]</p>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <h2>Certificates & Awards</h2>
+    <ul>
+      <li>Certificate Name - Description</li>
+      
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name"required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"  placeholder="Enter your email"required>
+    
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"  placeholder="Enter a brief message" required></textarea>
+    
+      <button type="button" onclick="sendEmail()">Send</button>
+    </form>
+  
+    <script>
+      function sendEmail() {
+        emailjs.sendForm('service_rf3sqjh', 'template_wt5dezz', '#contact-form')
+          .then(function(response) {
+            alert("Message sent successfully!");
+          }, function(error) {
+            alert("Failed to send message. Please try again.");
+          });
+      }
+    </script>
+    
+    <!-- Social Media Links -->
+    <div class="social">
+      <a href="link-to-twitter">Twitter</a>
+      <a href="link-to-linkedin">LinkedIn</a>
+      <!-- Add more social media icons as needed -->
+    </div>
+  </section>
+
+</body>
+</html>
